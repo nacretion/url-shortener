@@ -6,6 +6,8 @@ COPY package*.json ./
 
 ENV NODE_ENV production
 
+RUN npm i -g @nestjs/cli
+
 RUN npm ci
 
 COPY . .
